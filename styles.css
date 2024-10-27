@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --white: #ffffff;
+    --gray: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--gray);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav button {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 0.5em 1.5em;
+    margin: 0 0.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+nav button:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.page {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.profile-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2em;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+}
+
+.course-card {
+    background: var(--white);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--secondary-color);
+}
