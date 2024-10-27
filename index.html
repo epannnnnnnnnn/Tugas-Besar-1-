@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Informasi Kuliah</title>
+    <link rel="stylesheet" href="FormatUts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Website Informasi Perkuliahan</h1>
+        <nav>
+            <button onclick="showPage('dataDiri')">Data Diri</button>
+            <button onclick="showPage('infoKuliah')">Informasi Kuliah</button>
+        </nav>
+        <div class="social-media">
+            <a href="https://instagram.com/epannnnnnnnnn_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@garoxsdimari" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://whatsapp.com/https://wa.me/qr/VTJESZ4JTL7RN1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
+
+    <!-- Halaman Data Diri -->
+    <div id="dataDiri" class="page">
+        <div class="profile-card">
+            <img src="foto epan.jpg" alt="Foto Profil" class="profile-image">
+            <div class="profile-info">
+                <h2>Data Diri Mahasiswa</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Nama</td>
+                        <td>: Jeremia Evan Noorgiantoro</td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>: 41823010078</td>
+                    </tr>
+                    <tr>
+                        <td>Program Studi</td>
+                        <td>: Sistem Informasi</td>
+                    </tr>
+                    <tr>
+                        <td>Fakultas</td>
+                        <td>: Ilmu Komputer</td>
+                    </tr>
+                    <tr>
+                        <td>Angkatan</td>
+                        <td>: 2023</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman Informasi Kuliah -->
+    <div id="infoKuliah" class="page" style="display: none;">
+        <div class="course-card">
+            <h2>Informasi Perkuliahan</h2>
+            <div class="semester-nav">
+                <button onclick="showSemester('ganjil')">Semester Ganjil</button>
+                <button onclick="showSemester('genap')">Semester Genap</button>
+            </div>
+        </div>
+        <div id="semester1" class="semester-content">
+            <h3>Daftar Mata Kuliah Semester Ganjil</h3>
+            <table>
+                <tr>
+                    <td>Jadwal Kuliah</td>
+                    <td>Kode MK</td>
+                    <td>Mata Kuliah</td>
+                    <td>Kelas</td> 
+                    <td>Dosen Pengampu</td>
+                </tr>
+                <!-- Add your semester data here -->
+            </table>
+        </div>
+        <div id="semester2" class="semester-content" style="display: none;">
+            <h3>Daftar Mata Kuliah Semester Genap</h3>
+            <table>
+                <tr>
+                    <td>Jadwal Kuliah</td>
+                    <td>Kode MK</td>
+                    <td>Mata Kuliah</td>
+                    <td>Kelas</td> 
+                    <td>Dosen Pengampu</td>
+                </tr>
+                <!-- Add your semester data here -->
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
